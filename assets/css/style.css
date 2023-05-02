@@ -1,6 +1,18 @@
 @import "./reset.css";
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: rgb(167, 237, 214);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .cercle {
@@ -11,10 +23,5 @@ body {
   color: white;
   margin: 10px;
   background-color: white;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */
