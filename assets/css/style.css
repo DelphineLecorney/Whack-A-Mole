@@ -23,4 +23,10 @@ body {
   margin: 10px;
   background-color: white;
   flex-shrink: 0;
+}
+
+.score {
+  font-size: 35px;
+  position: absolute;
+  bottom: 80px;
 }/*# sourceMappingURL=style.css.map */
