@@ -17,6 +17,8 @@ for (let i = 0; i < 12; i++) {
     if (event.target.style.backgroundColor === "red") {
       score++;
       scoreElement.innerText = `Score: ${score}`;
+    }else{
+      alert('Loupé');
     }
   });
 }
