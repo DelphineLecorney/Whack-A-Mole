@@ -25,6 +25,10 @@ body {
   flex-shrink: 0;
 }
 
+.cercle.red {
+  background-image: url("../pictures/taupe.jpg");
+}
+
 .score {
   font-size: 35px;
   position: absolute;

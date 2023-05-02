@@ -14,7 +14,7 @@ for (let i = 0; i < 12; i++) {
   cercle.classList.add("cercle");
   container.appendChild(cercle);
   cercle.addEventListener("click", (event) => {
-    if (event.target.style.backgroundColor === "red") {
+    if (event.target.classList.contains('red')) {
       score++;
       scoreElement.innerText = `Score: ${score}`;
     }else{
@@ -29,10 +29,10 @@ let index = 0;
 function displayMoles() {
   const cercles = container.querySelectorAll(".cercle");
   cercles.forEach((cercle) => {
-    cercle.style.backgroundColor = "white";
+    cercle.classList.remove('red');
   });
 
   const randomIndex = Math.floor(Math.random() * nbCercle);
-  cercles[randomIndex].style.backgroundColor = "red";
+  cercles[randomIndex].classList.add('red');
 }
 setInterval(displayMoles, 800);

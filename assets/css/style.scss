@@ -26,6 +26,9 @@ body {
     // empêche les cercles de rétrécir pour tenir sur une ligne
     flex-shrink: 0;
 }
+.cercle.red {
+    background-image: url('../pictures/taupe.jpg');
+  }
 
 .score {
     font-size: 35px;
