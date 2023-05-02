@@ -1,0 +1,14 @@
+@import "./reset.css";
+.cercle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(191, 208, 157);
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
