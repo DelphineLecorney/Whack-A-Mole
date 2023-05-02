@@ -29,4 +29,6 @@ body {
   font-size: 35px;
   position: absolute;
   bottom: 80px;
+  border: 4mm ridge rgba(140, 180, 140, 0.6);
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
