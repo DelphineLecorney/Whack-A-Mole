@@ -18,7 +18,7 @@ for (let i = 0; i < 12; i++) {
       score++;
       scoreElement.innerText = `Score: ${score}`;
     }else{
-      alert('Loupé');
+      alert('Tu as loupé :(');
     }
   });
 }
@@ -35,4 +35,4 @@ function displayMoles() {
   const randomIndex = Math.floor(Math.random() * nbCercle);
   cercles[randomIndex].style.backgroundColor = "red";
 }
-setInterval(displayMoles, 1300);
+setInterval(displayMoles, 800);
