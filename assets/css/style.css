@@ -24,7 +24,6 @@ body {
   background-color: white;
   flex-shrink: 0;
 }
-
 .cercle.red {
   background-image: url("../pictures/taupe.jpg");
 }
@@ -35,4 +34,29 @@ body {
   bottom: 80px;
   border: 4mm ridge rgba(146, 124, 103, 0.6);
   padding: 20px;
+}
+
+.start,
+.stop,
+.speed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(146, 124, 103, 0.6);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: 4mm ridge rgba(146, 124, 103, 0.6);
+  border-radius: 5px;
+}
+.start:hover,
+.stop:hover,
+.speed:hover {
+  background-color: rgba(134, 85, 39, 0.6);
 }/*# sourceMappingURL=style.css.map */
