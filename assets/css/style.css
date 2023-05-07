@@ -15,6 +15,15 @@ body {
   margin: 0 auto;
 }
 
+.sectionButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto;
+  order: 1;
+}
+
 .cercle {
   position: relative;
   width: 100px;
@@ -29,11 +38,14 @@ body {
 }
 
 .score {
-  font-size: 35px;
+  padding: 15px 32px;
+  font-size: 16px;
+  color: white;
   position: absolute;
   bottom: 80px;
   border: 4mm ridge rgba(146, 124, 103, 0.6);
-  padding: 20px;
+  padding: 15px 32px;
+  border-radius: 5px;
 }
 
 .start,
@@ -41,14 +53,10 @@ body {
 .speed {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: rgba(146, 124, 103, 0.6);
-  border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 10px;
   cursor: pointer;

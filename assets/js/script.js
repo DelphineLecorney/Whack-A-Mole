@@ -57,18 +57,21 @@ function changeSpeed(speedValue) {
   stopGame();
   startGame();
 }
+const sectionButtons = document.createElement("div");
+sectionButtons.classList.add("sectionButtons");
+document.body.appendChild(sectionButtons);
 
 const startButton = document.createElement("button");
 startButton.innerText = "Start";
 startButton.classList.add("start");
 startButton.addEventListener("click", startGame);
-document.body.appendChild(startButton);
+sectionButtons.appendChild(startButton);
 
 const stopButton = document.createElement("button");
 stopButton.innerText = "Stop";
 stopButton.classList.add("stop");
 stopButton.addEventListener("click", stopGame);
-document.body.appendChild(stopButton);
+sectionButtons.appendChild(stopButton);
 
 const speedButton = document.createElement("button");
 speedButton.innerText = "Change Speed";
@@ -77,4 +80,4 @@ speedButton.addEventListener("click", () => {
   const speedChoice = prompt("Choose a speed (slow, normal, or fast):");
   changeSpeed(speedChoice);
 });
-document.body.appendChild(speedButton);
+sectionButtons.appendChild(speedButton);
