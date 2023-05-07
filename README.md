@@ -1,6 +1,6 @@
 # Whack-A-Mole
 
- ![Whack-A-Mole](assets%5Cpictures%5CCaptureWahck-A-Mole.jpg)
+ ![Whack-A-Mole](https://github.com/DelphineLecorney/Whack-A-Mole/blob/main/assets/pictures/CaptureWahck-A-Mole.jpg "Whack-A-Mole")
 
 > Let's create a simple Whack-A-Mole clone.
 
