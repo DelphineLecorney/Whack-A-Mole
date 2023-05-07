@@ -15,14 +15,19 @@ for (let i = 0; i < 12; i++) {
   cercle.classList.add("cercle");
   container.appendChild(cercle);
   cercle.addEventListener("click", (event) => {
-    if (event.target.classList.contains('red')) {
+    if (event.target.classList.contains("taupe")) {
       score++;
       scoreElement.innerText = `Score: ${score}`;
-    }else{
-      alert('Tu as loupé :(');
+    } else {
+      alert("Tu as loupé :(");
     }
   });
 }
+container.addEventListener("click", (event) => {
+  if (!event.target.classList.contains("cercle")) {
+    alert("Tu as loupé :(");
+  }
+});
 
 let nbCercle = 12;
 let index = 0;
@@ -31,11 +36,11 @@ let speed = 800;
 function displayMoles() {
   const cercles = container.querySelectorAll(".cercle");
   cercles.forEach((cercle) => {
-    cercle.classList.remove('red');
+    cercle.classList.remove("taupe");
   });
 
   const randomIndex = Math.floor(Math.random() * nbCercle);
-  cercles[randomIndex].classList.add('red');
+  cercles[randomIndex].classList.add("taupe");
 }
 
 function startGame() {
@@ -47,11 +52,11 @@ function stopGame() {
 }
 
 function changeSpeed(speedValue) {
-  if (speedValue === 'slow') {
+  if (speedValue === "slow") {
     speed = 1500;
-  } else if (speedValue === 'normal') {
+  } else if (speedValue === "normal") {
     speed = 800;
-  } else if (speedValue === 'fast') {
+  } else if (speedValue === "fast") {
     speed = 400;
   }
   stopGame();
